@@ -22,7 +22,6 @@
 			for($i=1; $i < (count($projectImgs)); $i++){
 					$arrayImgs[]=$projectImgs[$i];
 			}
-
 			$return['images']=$arrayImgs;
 
 		return $return;
@@ -72,7 +71,14 @@
 </head>
 <body>
 		<?php //include("header.php"); ?>
-
+		<?php
+			if(isset($_GET['pid'])){
+				$pid=$_GET['pid'];
+				$project=getProject($pid);
+			}else{
+				header("Location:projects.php");
+			}
+		?>
 		<div class="stylishHeader" style="background:linear-gradient(140deg,rgba(24,46,74,.85),rgba(70,174,195,.65)),url(images/fileuploader.png) center fixed; background-size:cover;">
 			<div style="width:85%; color:#FFF; margin:auto; overflow:auto;">
 				<a href="projects.php">
@@ -82,7 +88,6 @@
 				</a>
 				<div class="projectTopic">
 					<?php
-						$project=getProject(1);
 						echo $project['name'];
 					?>
 				</div>

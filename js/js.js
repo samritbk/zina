@@ -1,16 +1,8 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        var posFromTop = $(window).scrollTop();
 
-        if(posFromTop > 200){
-        // if more than 200px from the top do something
-
-			$('#')
-
-        } else {
-        // otherwise do something else.
-
-        }
-    });
-
+jQuery(document).ready(function(){
+	$('.skillbar').each(function(){
+		$(this).find('.skillbar-bar').animate({
+			width:$(this).attr('data-percent')
+		},6000);
+	});
 });

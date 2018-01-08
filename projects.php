@@ -73,15 +73,15 @@
 	                    </div>
 	                </div>
 	            </div>
-	            <div class="gallery-grid">
-	            	<div class="gallery-grid-ins">
-	                	<img src="images/workspace.png" width="100%" class="grid-img"/>
-	                    <div class="gallery-marker">
-	                    	<div class="gallery-marker-title">Upcoming</div>
-	                        <div class="gallery-marker-desc">Secret Project due to be launched in December 2017</div>
-	                    </div>
-	                </div>
-	            </div>
+							<div class="gallery-grid">
+								<div class="gallery-grid-ins">
+										<img src="images/lookoutsms.jpg" width="100%" class="grid-img"/>
+											<div class="gallery-marker">
+												<div class="gallery-marker-title">Lookoutsms</div>
+													<div class="gallery-marker-desc">Bulk SMS web application</div>
+											</div>
+									</div>
+							</div>
 	            <div class="clear"></div>
 	        </div>
         </div>
